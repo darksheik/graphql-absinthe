@@ -8,6 +8,7 @@
 #---
 defmodule PlateSlateWeb.Schema do
   use Absinthe.Schema
+  alias PlateSlate.{Repo, Menu}
 
   query do
     field :menu_items, list_of(:menu_item) do
